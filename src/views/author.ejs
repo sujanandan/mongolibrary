@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Author</title>
+  <link rel="icon" href="/image/lib1.jpeg">
+  <!-- Including Bootstrap -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+   <!--font awesome-->
+  <link rel="stylesheet" href="/css/libr.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="./libcss/libr.css"> -->
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light "style="background-color:blue">
+    <a class="navbar-brand" href="#">
+      <img src="/image/lib1.jpeg" width="50px" height="40px" alt="">
+    </a>
+  <div class="collapse navbar-collapse" id="navbar1">
+    <a class="navbar-brand" href="<%=nav[0].link%>"><i class="fa fa-home" aria-hidden="true"></i> <%=nav[0].name%></a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <%for(i=1;i<nav.length;i++){%>  
+          <li class="nav-item">
+               <a class="nav-link" href="<%=nav[i].link%>"><i class="<%=nav[i].disicon%>" aria-hidden="true"></i></span><%=nav[i].name%></a>      
+          </li>
+          <%}%>
+      </li>      
+    </ul>    
+  </div>
+</nav>
+      <nav class="navbar navbar-light  justify-content-between" style="background-color:rgba(83, 7, 30, 0.185)">
+        <strong><%=title%></strong>
+
+        <form class="form-inline">            
+          <input class="form-control mr-sm-2" type="search" placeholder="Search Book/Author" aria-label="Search" required>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          <i class="fa fa-search"></i> </button>
+         
+        </form>
+      </nav>
+      
+<div class="container">
+        <h2 text-align="center">Authors</h2>
+        <div class="row justify-content-center" id="bookRow">
+          <%for(i=0;i<authors.length;i++){%>  
+            <div class="col-md-2" >
+              <a  href="/author/<%=authors[i]._id%>"><img alt=""src="/image/<%=authors[i].image%>" 
+                 class="img-thumbnail"></a>
+              <h3><span style="color:rgb(5, 23, 82);font-weight: bolder;"><%=authors[i].name%></span></h3><h4>
+                <small style="font-family:cursive;font-weight: bolder;" ><%=authors[i].lang%>  </small></h4>
+                <!-- <h5><small style="font-family:cursive;font-weight: bolder;" ><%=authors[i].genre%>  </small></h5> -->
+           </div>
+          <%}%>     
+        </div>
+        
+  </div>
+</body>
+<!-- <footer class="fixed-bottom">
+  <p style="text-align:center"> 
+      Email:&nbsp librarymgmt@gmail.com<br>
+      mobile:&nbsp 0123456789
+  </p>
+</footer> -->
+
+</html> 

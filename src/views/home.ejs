@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%=title%></title>
+  <link rel="icon" href="image/lib1.jpeg">
+  <!-- Including Bootstrap -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+   <!--font awesome-->
+  <link rel="stylesheet" href="css/libhome.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light "style="background-color:blue">
+    <a class="navbar-brand" href="#">
+      <img src="image/lib1.jpeg" width="50px" height="40px" alt="">
+    </a>
+  <div class="collapse navbar-collapse" id="navbar1">
+    <a class="navbar-brand" href="<%=nav[0].link%>"><i class="fa fa-home" aria-hidden="true"></i> <%=nav[0].name%></a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <%for(i=1;i<nav.length;i++){%>  
+          <li class="nav-item">
+               <a class="nav-link" href="<%=nav[i].link%>"><i class="<%=nav[i].disicon%>" aria-hidden="true"></i></span><%=nav[i].name%></a>      
+          </li>
+          <%}%>
+      </li>      
+    </ul>    
+  </div>
+</nav>
+
+<nav class="navbar navbar-light  justify-content-between" style="background-color:rgba(83, 7, 30, 0.185)">
+  <!-- <a class="navbar-brand"><span >Library Management System</span></a> -->
+  <strong><%=title%></strong>
+  <form class="form-inline"> 
+    <input class="form-control mr-sm-2" type="search" placeholder="Search Book/Author" aria-label="Search" required>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+    <i class="fa fa-search"></i> </button>
+  </form>
+</nav>
+
+
+<div class="container"id="container1">
+  <br>
+  <h3><span style="text-align:right" >Welcome to Library Management System</span></h3>
+<div class="row justify-content-center" id="row1" > 
+  <%for(i=0;i<details.length;i++){%> 
+  <div class="col-md-4">
+        <div class="card shadow" style="width: 20rem; ">
+            <div class="inner">
+            <h5> <%=details[i].name%></h5>
+                <img src="image/<%=details[i].img%>" class="card-img-top" style=" height:250px" alt="...">
+            </div>                         
+            <div class="card-body">
+                <p class="card-text">
+                  <%=details[i].desc%>
+                </p>
+              <a href="<%=details[i].link%>" >Explore more.</a> 
+            </div>
+        </div>
+    </div>
+    <%}%>              
+    
+</div>
+</div>
+<br>
+
+<div class="container" id="container2">
+  <h3>Most Popular Books</h3>
+  <br>
+  <div class="row justify-content-end">
+      <div class="col-md-3" >
+        <a > 
+           <img src="image/kid1.jpg" class="img-thumbnail"></a>
+      </div>
+      <div class="col-md-3"><a >
+        <img src="image/shake1.jpg"class="img-thumbnail"></a>
+      </div>
+      <div class="col-md-3"><a >
+          <img src="image/kid3.jpeg"class="img-thumbnail"></a>
+      </div>
+      <div class="col-md-3"><a >
+        <img src="image/apj2.jpg"class="img-thumbnail"></a>
+      </div>        
+  </div>
+</div>     
+      
+     <!-- <script src="script1.js"></script>  -->
+</body>
+<footer>
+  <p style="text-align:center"> 
+      Email:&nbsp librarymgmt@gmail.com<br>
+      mobile:&nbsp 9876543210
+  </p>
+</footer>
+
+</html> 

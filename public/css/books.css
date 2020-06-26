@@ -1,0 +1,48 @@
+body {
+    background-image: url("/image/giphy1.gif"); 
+   
+   background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+  margin: 0px;
+  } 
+  .navbar a{
+    color: ivory;
+    /* border:1px solid rgb(226, 220, 220); */
+    font-family:fantasy;
+    font-size: 20px;
+    margin: 3px;
+    padding: 1.5px;
+  
+  }
+  .navbar a:hover{
+    background-color: rgb(167, 227, 245);
+    transition: 0.5s ease-in;
+    color: rgb(76, 30, 241);
+  }
+  
+  footer{
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 2rem;
+     color: ivory;
+     background-color:blue;
+     /* margin: .1rem;
+     padding: 0rem; */
+   /* position: inherit; */
+   
+  
+  }
+  #booksRow{
+    background-color:rgb(207, 200, 200);
+    /* margin-left: 230px;
+    margin-top: 40px;
+    margin-right: 100px;
+    padding-right: 15px; */
+    width:70%;
+    margin-top: 50px;
+    margin-left: 350px;
+    height:320px;
+  }
+  
+     
+    

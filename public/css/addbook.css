@@ -1,0 +1,109 @@
+body {
+    background-image: url("/image/giphy1.gif"); 
+   
+   background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+  /* margin: 0px; */
+  } 
+  .navbar a{
+    color: ivory;
+    /* border:1px solid rgb(226, 220, 220); */
+    font-family: fantasy;
+    font-size: 20px;
+    margin: 3px;
+    padding: 1.5px;
+  
+  }
+  .navbar a:hover{
+    background-color: rgb(167, 227, 245);
+    transition: 0.5s ease-in;
+    color: rgb(76, 30, 241);
+  }
+  
+  footer{
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 2rem;
+     color: ivory;
+     background-color: blue;
+     /* margin: 4rem 0 0 0;
+     padding: 0rem; */
+   /* position: inherit; */
+   margin-bottom: 0px;
+   margin-top: 145px; 
+  }
+  #authorFooter{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 2rem;
+     color: ivory;
+     background-color: blue;
+     /* margin: 4rem 0 0 0;
+     padding: 0rem; */
+   /* position: inherit; */
+   margin-bottom: 0px;
+   margin-top: 250px; 
+  }
+  label,input{
+    display: inline-block;
+
+    
+  }
+  input[type=text]{
+    background-color: burlywood;
+
+  }
+  textarea{
+    background-color: burlywood;
+  }
+  #addbtn{
+    width:370px;
+    margin-left: 33px;
+    padding-left: 13px;
+    color: blue;
+    background-color: rgb(230, 174, 174);
+  }
+  #addbtnauthor{
+    width:370px;
+    margin-left: 73px;
+    padding-left: 13px;
+    color: blue;
+    background-color: rgb(230, 174, 174);
+  }
+  #elementDiv{
+    margin: 5px 19px;
+    font-weight: bolder;
+    color:blue;
+    padding: 5px;
+    align-items: center;
+    border-radius: 4px;
+    border-top: 2px solid rgba(241, 220, 150, 0.959);
+ border-right: 2px solid rgb(247, 206, 146);
+ border-bottom: 2px solid #ebc8a0;
+ border-left: 2px solid rgb(233, 194, 171);
+  }
+ h2{
+   padding-left: 40px;
+ }
+ h3{
+  padding-left: 170px;
+}
+  .addBook{
+    
+    font-size: larger;
+    width:33%;
+    margin-top: 50px;
+    margin-left: 35%;
+    height:320px;
+   
+  }
+  .addauthor{
+    
+    font-size: larger;
+    width:40%;
+    margin-top: 50px;
+    margin-left: 35%;
+    height:320px;
+   
+  }
+     
+    

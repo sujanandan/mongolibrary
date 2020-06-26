@@ -1,0 +1,90 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* box-sizing: border-box;  */
+    overflow-x: hidden;
+    /* background-image: url("../hdwall1.jpg"); */
+    background-size: cover;
+    /* font-family: sans-serif; */
+    background-image: url("/image/giphy1.gif"); 
+}
+.src{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    /* top:calc(-100px/2); */
+    /* left:calc(50%-75px); */
+    top:13%;
+    left: 47%;
+    border-radius: 50%;
+  }
+#main{
+    /* position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%,-50%); */
+    /* width: 350px;
+    height: 420px; */
+    /* padding: 80px 40px; */
+    /* box-sizing: border-box;
+    background: rgba(0,0,0,.3);
+
+    border-radius: 4px;
+   	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #bdb1b1;
+    border-left: 2px solid rgb(167, 148, 236); */ 
+    width:450px; 
+    height:auto; 
+    overflow:hidden; 
+     margin-left:550px;
+      margin-right:auto; 
+ margin-top:100px;
+  border:3px solid#304dee ;
+  padding:2rem; 
+}
+label, input {
+ 
+    display: inline-block;
+   }
+   input[type=password],input[type=text],input[type=email] {
+    width: 100%;
+    height: 30%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    /* display: inline-block; */
+    border:1rem;
+   
+    /* background-color:whitesmoke; */
+   }   
+
+
+.navbar a{
+    color: ivory;
+    border:1px solid rgb(226, 220, 220);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 3px;
+    padding: 1.5px;
+  
+  }
+  .navbar a:hover{
+    background-color: rgb(167, 227, 245);
+    transition: 0.5s ease-in;
+    color: rgb(76, 30, 241);
+  }
+  
+ 
+  footer{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    color: ivory;
+    /* background-color: rgba(83, 7, 30, 0.185); */
+    background-color: blue;
+    /* margin: .1rem;
+    padding: 0rem; */
+  /* position: inherit; */
+  
+ 
+ }

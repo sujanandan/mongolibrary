@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%=title%></title>
+  <link rel="icon" href="image/lib1.jpeg">
+  <!-- Including Bootstrap -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+   <!--font awesome-->
+  <link rel="stylesheet" href="css/libr.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css"> 
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light "style="background-color:blue">
+    <a class="navbar-brand" href="#">
+      <img src="image/lib1.jpeg" width="50px" height="40px" alt="">
+    </a>
+  <div class="collapse navbar-collapse" id="navbar1">
+    <strong>Library Management System</strong>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <%for(i=0;i<nav.length;i++){%>
+           
+          <li class="nav-item">
+               <a class="nav-link" href="<%=nav[i].link%>"><i class="fa fa-user" aria-hidden="true"></i></span><%=nav[i].name%></a>      
+          </li>
+          <%}%>
+      </li>    
+    </ul>
+  </div>
+</nav>
+<div id="main"> 
+	<img src="image/avathar1.png" alt="" class="src">
+  <form  action="/signup/signupadd"  onsubmit="return validate()"method="POST">
+        <!-- <div class="container-log"> -->
+          <h3>Registration</h3>
+          <label for="uname"><b>User name</b></label>
+          <input type="text" placeholder="Enter User name" id="uname"name="uname" >
+          <span id="uspan" class="text-danger font-weight-bold"></span><br>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" id="email" name="email">
+          <span id="espan" class="text-danger font-weight-bold"></span><br>
+          
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" id="pwd" name="pwd" >
+          <span id="pspan" class="text-danger font-weight-bold"></span><br>
+      
+          <label for="psw1"><b>Re-enter Password</b></label>
+          <input type="password" placeholder="Re-enter Password" id="pwd1"name="pwd1" >  
+          <span id="rspan" class="text-danger font-weight-bold"></span><br> 
+         
+          
+          <button type="submit" class="registerbtn">Register</button>
+         <p>Already have an account? <a href="<%=nav[0].link%>"><%=nav[0].name%></a></p>
+        <!-- </div> --> 
+      </form>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/vali.js"></script> 
+</body>
+<footer>
+  <p style="text-align:center"> 
+      Email:&nbsp librarymgmt@gmail.com<br>
+      mobile:&nbsp 9876543210
+  </p>
+</footer>
+
+</html> 
+
+       
+    
